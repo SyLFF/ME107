@@ -18,7 +18,7 @@ while(True):
     ret, frame = cap.read()
     cv2.imshow('feed', frame)
     if cv2.waitKey(1) & 0xFF == ord('s'):
-        cv2.imwrite('turn2.png', frame)
+        cv2.imwrite('imageName.png', frame)
         break
 # When everything done, release the capture
 cap.release()
